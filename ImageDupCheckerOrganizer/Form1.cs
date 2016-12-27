@@ -14,6 +14,11 @@ namespace ImageDupCheckerOrganizer
 {
 	public partial class Form1 : Form
 	{
+		private List<string> fileTypesToImport = new List<string>()
+		{
+			"*.jpg", "*.jpeg", "*.MOV", "*.3gp", "*.mts", "*.avi", "*.png"
+		};
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -31,14 +36,25 @@ namespace ImageDupCheckerOrganizer
 
 		private void ImportDirectory(string importDir, List<string> masterDirFolders)
 		{
-			var importFiles = Directory.EnumerateFiles(importDir, "*.jpg");
-			// avi, 3gp, png
-			importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.jpeg"));
-			importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.MOV"));
-			importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.3gp"));
-			importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.mts"));
-			importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.avi"));
-			importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.png"));
+			IEnumerable<string> importFiles = null;
+			foreach (var fileType in fileTypesToImport) {
+				if (importFiles == null)
+				{
+					importFiles = Directory.EnumerateFiles(importDir, fileType);
+				}
+				else
+				{
+					importFiles.Concat(Directory.EnumerateFiles(importDir, fileType));
+				}
+			}
+			//var importFiles = Directory.EnumerateFiles(importDir, "*.jpg");
+			//// avi, 3gp, png
+			//importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.jpeg"));
+			//importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.MOV"));
+			//importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.3gp"));
+			//importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.mts"));
+			//importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.avi"));
+			//importFiles = importFiles.Concat(Directory.EnumerateFiles(importDir, "*.png"));
 			foreach (var importImgFileName in importFiles)
 			{
 				var foundMatch = false;
