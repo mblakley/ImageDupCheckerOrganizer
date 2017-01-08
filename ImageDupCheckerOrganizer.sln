@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDupCheckerOrganizer", "ImageDupCheckerOrganizer\ImageDupCheckerOrganizer.csproj", "{A5ACED36-7018-49CA-99C1-A0881AB95CE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDupCheckerOrganizerService", "ImageDupCheckerOrganizerService\ImageDupCheckerOrganizerService.csproj", "{EE8C61B0-81CA-456D-9434-6F9C43803A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDupCheckerOrganizerLib", "ImageDupCheckerOrganizerLib\ImageDupCheckerOrganizerLib.csproj", "{22336621-FD4B-48E6-891E-8947DF245BCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A5ACED36-7018-49CA-99C1-A0881AB95CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5ACED36-7018-49CA-99C1-A0881AB95CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5ACED36-7018-49CA-99C1-A0881AB95CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8C61B0-81CA-456D-9434-6F9C43803A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8C61B0-81CA-456D-9434-6F9C43803A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8C61B0-81CA-456D-9434-6F9C43803A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8C61B0-81CA-456D-9434-6F9C43803A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22336621-FD4B-48E6-891E-8947DF245BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22336621-FD4B-48E6-891E-8947DF245BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22336621-FD4B-48E6-891E-8947DF245BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22336621-FD4B-48E6-891E-8947DF245BCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

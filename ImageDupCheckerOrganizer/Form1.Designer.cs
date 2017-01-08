@@ -1,4 +1,4 @@
-﻿namespace ImageDupCheckerOrganizer
+﻿namespace ImageDupCheckerOrganizerForm
 {
 	partial class Form1
 	{
@@ -43,7 +43,7 @@
 			this.txtMaster.Name = "txtMaster";
 			this.txtMaster.Size = new System.Drawing.Size(100, 20);
 			this.txtMaster.TabIndex = 0;
-			this.txtMaster.Text = "C:\\temp\\archive";
+			this.txtMaster.Text = "G:\\photosMasterArchive";
 			// 
 			// txtImport
 			// 
@@ -51,7 +51,7 @@
 			this.txtImport.Name = "txtImport";
 			this.txtImport.Size = new System.Drawing.Size(100, 20);
 			this.txtImport.TabIndex = 1;
-			this.txtImport.Text = "C:\\temp\\import";
+			this.txtImport.Text = "J:\\AllPhotosDump";
 			// 
 			// label1
 			// 

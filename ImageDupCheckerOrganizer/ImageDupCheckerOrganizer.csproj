@@ -7,7 +7,7 @@
     <ProjectGuid>{A5ACED36-7018-49CA-99C1-A0881AB95CE6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ImageDupCheckerOrganizer</RootNamespace>
+    <RootNamespace>ImageDupCheckerOrganizerForm</RootNamespace>
     <AssemblyName>ImageDupCheckerOrganizer</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ExifLib, Version=1.7.0.0, Culture=neutral, PublicKeyToken=30284005913968db, processorArchitecture=MSIL">
-      <HintPath>..\packages\ExifLib.1.7.0.0\lib\net45\ExifLib.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -68,8 +64,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,6 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImageDupCheckerOrganizerLib\ImageDupCheckerOrganizerLib.csproj">
+      <Project>{22336621-fd4b-48e6-891e-8947df245bcc}</Project>
+      <Name>ImageDupCheckerOrganizerLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
